@@ -71,8 +71,8 @@
 
   var descriptor = {
     blocks: [
-      ['R', '最新のツイートは @%s', 'latestUserTweet', 'スクラッチ'],
-      ['R', '一番 %m.sort ツイートは %s', 'getTopTweet', 'recent', '#スクラッチ'],
+      ['R', '最新ツイートは @%s', 'latestUserTweet', 'スクラッチ'],
+      ['R', '一番 %m.sort ツイートは %s', 'getTopTweet', '最近の', '#スクラッチ'],
     ],
     menus: {
       sort: ["人気の", "最近の"]
