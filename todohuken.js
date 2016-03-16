@@ -4,11 +4,6 @@
     $.ajax({
       method: "GET",
       url: " http://www.ekidata.jp/api/p/20.json",
-      data: {
-        line_cd: cd,
-        line_name: name,
-        count: 2
-      },
       dataType: "json",
       success: function(data) {
         if (data.length > 0) {
