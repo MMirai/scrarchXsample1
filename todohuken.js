@@ -13,6 +13,7 @@
       success: function(data) {
         if (data.length > 0) {
           callback(data[0].text);
+          callback(data[1].text);
           return;
         }
         callback("No tweets found");
