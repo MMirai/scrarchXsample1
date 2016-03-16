@@ -5,9 +5,9 @@
       method: "GET",
       url: " http://www.ekidata.jp/api/p/20.json",
       data: {
-        screen_name: cd,
-        screen_name: name,
-        count: 1
+        line_cd: cd,
+        line_name: name,
+        count: 2
       },
       dataType: "json",
       success: function(data) {
@@ -26,7 +26,7 @@
   };
 
   ext._getStatus = function() {
-    return { status:2, msg:'Ready' };
+    return { status:1, msg:'Ready' };
   };
 
   var descriptor = {
