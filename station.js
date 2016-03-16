@@ -4,9 +4,10 @@
     $.ajax({
       method: "GET",
       url: " http://www.ekidata.jp/api/p/20.json",
-      dataType: "json",
-      success: function(res) {
-       console.log(res); 
+      dataType: "script",
+      success: function(data, dataType) {
+        alert("ok");
+       console.log("ok", xml.data); 
       }
         callback("No tweets found");
       },
