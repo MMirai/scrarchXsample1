@@ -24,10 +24,6 @@
   };
 
   ext.getTopTweet = function(sort, str, callback) {
-    //If searching popluar, remove # and @ symbols from query
-    if (sort == "popular") {
-      str = str.replace('#','').replace('@','');
-    }
     $.ajax({
       method: "GET",
       url: "http://www.ekidata.jp/api/l/11302.json",
@@ -57,15 +53,11 @@
 
   var descriptor = {
     blocks: [
-      ['R', 'a', 'b', 'スクラッチ'],
-      ['R', 'c', 'd', 'e', 'f'],
+      ['R', 'a', 'b', 'c'],
+      ['R', 'd', 'e', 'f', 'g'],
     ],
-    menus: {
-      sort: ["人気", "最近"]
-    },
-    url: 'https://dev.twitter.com/overview/documentation'
   };
 
-  ScratchExtensions.register('Twitter', descriptor, ext);
+  ScratchExtensions.register('yamanote', descriptor, ext);
 
 })({});
