@@ -17,6 +17,7 @@
     timeout:1000,
     success: function(data, dataType) {
         alert("ok");
+        str=
         console.log("ok", xml.data);
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) {
