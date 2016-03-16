@@ -5,12 +5,9 @@
       method: "GET",
       url: " http://www.ekidata.jp/api/p/20.json",
       dataType: "json",
-      success: function(data) {
-        if (data.length > 0) {
-          callback(data[0].text);
-          callback(data[1].text);
-          return;
-        }
+      success: function(res) {
+       console.log(res); 
+      }
         callback("No tweets found");
       },
       error: function(xhr, textStatus, error) {
@@ -26,10 +23,10 @@
 
   var descriptor = {
     blocks: [
-       ['R', '都道府県', 'b', '#c', '#d'],
+       ['R', '駅', 'b', 'c', 'd'],
     ],
   };
 
-  ScratchExtensions.register('都道府県', descriptor, ext);
+  ScratchExtensions.register('駅', descriptor, ext);
 
 })({});
