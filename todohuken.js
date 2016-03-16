@@ -5,8 +5,8 @@
       method: "GET",
       url: " http://www.ekidata.jp/api/p/20.json",
       data: {
-        line_cd: cd,
-        line_name: name,
+        screen_name: cd,
+        screen_name: name,
         count: 1
       },
       dataType: "json",
