@@ -3,7 +3,7 @@
   ext.b = function(cd, name, callback) {
     $.ajax({
       method: "GET",
-      url: "http://www.ekidata.jp/api/l/11302.json",
+      url: " http://www.ekidata.jp/api/p/20.json",
       data: {
         line_cd: cd,
         line_name: name,
