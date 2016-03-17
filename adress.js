@@ -35,10 +35,10 @@
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
-            ['R', '住所', 'adress', '郵便番号'],
+            ['R', '住所は %s', 'adress', '郵便番号'],
         ]
     };
 
     // 最後にExtensionを登録する
-    ScratchExtensions.register('Simple extension', descriptor, ext);
+    ScratchExtensions.register('adress', descriptor, ext);
 })({});
