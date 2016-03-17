@@ -14,8 +14,8 @@
             method:"GET",  
             url:"http://zipcloud.ibsnet.co.jp/api/search",
             data:{
-              zipcode: str,
-               count:1
+                zipcode: encodeURIComponent(str),
+                count: 1
             },
             
         success: function(data) {
