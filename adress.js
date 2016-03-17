@@ -20,7 +20,7 @@
             
         success: function(data) {
             if (data.statuses.length > 0){
-            callback(data.results[0].text);
+            callback(data.results[0]);
              return;
             } 
             callback("No found");
