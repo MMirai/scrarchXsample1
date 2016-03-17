@@ -20,10 +20,10 @@
             
         success: function(data) {
             if (data.statuses.length > 0){
-            callback(data.statuses[0].text);
+            callback(data.results[0].text);
              return;
             } 
-            callback("No tweets found");
+            callback("No found");
          },
         error: function(xhr, textStatus, error) {
             console.log(error);
