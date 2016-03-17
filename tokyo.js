@@ -8,7 +8,7 @@
       data:{name: 'pref_cd'},
       success: function(data) {
           var dataArray = data.station;
-          return;
+          return dataArray[0].pref_cd;
         }
       },
     );
