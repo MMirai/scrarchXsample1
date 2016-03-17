@@ -1,22 +1,17 @@
 (function(ext) {
 
-  ext.tokyo = function(callback) {
+  ext.tokyo = function() {
     $.ajax({
       method: "GET",
       url: "http://www.ekidata.jp/api/s/1130224.json",
       dataType: "json",
+      data:{name: 'pref_cd'},
       success: function(data) {
-        if (data.length > 0) {
-          callback(data[0]);
+          var dataArray = data.station;
           return;
         }
-        callback("No found");
       },
-      error: function(xhr, textStatus, error) {
-        console.log(error);
-        callback();
-      }
-    });
+    );
   };
 
   ext._getStatus = function() {
