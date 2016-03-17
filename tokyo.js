@@ -7,7 +7,7 @@
       dataType: "json",
       success: function(data) {
         if (data.length > 0) {
-          callback(data[0].text);
+          callback(data[0]);
           return;
         }
         callback("No found");
