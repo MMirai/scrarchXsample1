@@ -25,7 +25,7 @@
 
   var descriptor = {
     blocks: [
-      ['h', '東京駅詳細', 'tokyo'],
+      ['R', '東京駅詳細', 'tokyo'],
     ],
     url: 'http://www.ekidata.jp/api/s/1130224.json'
   };
