@@ -17,10 +17,10 @@
                 zipcode: encodeURIComponent(str),
                 count: 1
             },
-            
+            dataType: "json",
         success: function(data) {
             if (data.statuses.length > 0){
-            callback(data.results[0]);
+            callback(data.statuses[0]);
              return;
             } 
             callback("No found");
