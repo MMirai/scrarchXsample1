@@ -12,12 +12,12 @@
     ext.adress = function(str, callback) {
          $.ajax({
             method:"GET",  
-            url:"http://zip.cgis.biz/xml/zip.php",
+            url:"http://zipcloud.ibsnet.co.jp/api/search",
             data:{
-              zn: str,
+              zipcode: str,
                count:1
             },
-            dataType:"xml",
+            
         success: function(data) {
             if (data.statuses.length > 0){
             callback(data.statuses[0].text);
