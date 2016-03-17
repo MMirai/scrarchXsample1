@@ -1,6 +1,6 @@
 (function(ext) {
 
-  ext.tokyo = function(name, callback) {
+  ext.tokyo = function(callback) {
     $.ajax({
       method: "GET",
       url: "http://www.ekidata.jp/api/s/1130224.json",
@@ -28,7 +28,7 @@
 
   var descriptor = {
     blocks: [
-      ['R', '東京駅詳細 %s', 'tokyo'],
+      ['R', '東京駅詳細', 'tokyo'],
     ],
     url: 'http://www.ekidata.jp/api/s/1130224.json'
   };
