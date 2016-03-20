@@ -12,7 +12,7 @@
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
     ext.a = function(var) {
     var bar **= 2
-    return bar;
+    return;
     };
 
     // ブロックと関数のひも付け
