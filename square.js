@@ -11,14 +11,14 @@
     // blockが呼び出された時に呼ばれる関数を登録する。
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
     ext.do_domething = function(int) {
-    int b = a*a;
-    return b;
+    int c = b*b;
+    return c;
     };
 
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
-            [' ', 'do_something %s', ' ', 'a'],
+            [' ', 'do_something %s', 'a', 'b'],
         ]
     };
 
