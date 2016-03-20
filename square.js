@@ -10,7 +10,7 @@
 
     // blockが呼び出された時に呼ばれる関数を登録する。
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
-    ext.do_domething = function(var) {
+    ext.a = function(var) {
     var bar **= 2
     return bar;
     };
