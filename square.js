@@ -12,6 +12,7 @@
     ext.do_domething = function(str,callback) {
     var num1 = Number(str);
     callback(Math.pow(num1,2));
+    return;
     };
 
     // ブロックと関数のひも付け
