@@ -11,8 +11,8 @@
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
     ext.do_domething = function(str,callback) {
     var num1 = Number(str);
-    callback(Math.pow(num1,2));
-    return;
+    //callback(Math.pow(num1,2));
+    return Math.pow(num1,2);
     };
 
     // ブロックと関数のひも付け
