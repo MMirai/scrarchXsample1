@@ -1,4 +1,4 @@
-* Extension demonstrating a blocking command block */
+/* Extension demonstrating a blocking command block */
 /* Sayamindu Dasgupta <sayamindu@media.mit.edu>, May 2014 */
 
 new (function() {
