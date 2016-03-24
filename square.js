@@ -12,7 +12,7 @@
     ext.do_something = function(str,callback) {
     var n = Number(str);
     var z = Math.pow(n,2);
-    console.log('２乗は'+z+'です');
+    console.log(z);
     //return Math.pow(n,2);
     };
 
