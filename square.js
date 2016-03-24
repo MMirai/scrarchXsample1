@@ -25,7 +25,7 @@ new (function() {
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
-            ['r', '%nの２乗は' , 'a', '1'],
+            ['r', '%n の２乗は' , 'a', '1'],
         ]
     };
 
