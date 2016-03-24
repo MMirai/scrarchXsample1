@@ -1,4 +1,5 @@
-(function(ext) {
+new (function() {
+    var ext = this;
     // shutdown時に呼ばれる
     ext._shutdown = function() {};
 
@@ -9,21 +10,21 @@
 
     // blockが呼び出された時に呼ばれる関数を登録する。
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
-    ext.do_something = function(str,callback) {
-    var n = Number(str);
-    var z = Math.pow(n,2);
-    console.log(z);
-    window.setTimeout(function() {
-            callback();
-        }, wait*1000);
-
+    ext.a = function(base) {
+        return Math.pow(base,base);
+    //var n = Number(str);
+    //var z = Math.pow(n,2);
+    //console.log(z);
+    //window.setTimeout(function() {
+    //        callback();
+    //    }, wait*1000);
     //return Math.pow(n,2);
     };
 
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
-            [' ', 'do_something %s', 'do_something', 'sample text'],
+            ['r', '%n' , 'a', '1'],
         ]
     };
 
