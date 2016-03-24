@@ -11,7 +11,7 @@ new (function() {
     // blockが呼び出された時に呼ばれる関数を登録する。
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
     ext.a = function(base) {
-        return Math.pow(base,base);
+        return Math.pow(base);
     //var n = Number(str);
     //var z = Math.pow(n,2);
     //console.log(z);
