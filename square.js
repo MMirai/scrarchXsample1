@@ -12,19 +12,20 @@ new (function() {
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
     ext.a = function(base) {
         return Math.pow(base,2);
-    //var n = Number(str);
-    //var z = Math.pow(n,2);
-    //console.log(z);
-    //window.setTimeout(function() {
-    //        callback();
-    //    }, wait*1000);
-    //return Math.pow(n,2);
+    /*var n = Number(str);
+    var z = Math.pow(n,2);
+    console.log(z);
+    window.setTimeout(function() {
+            callback();
+        }, wait*1000);
+    return Math.pow(n,2);
+    */
     };
 
     // ブロックと関数のひも付け
     var descriptor = {
         blocks: [
-            ['r', '%n' , 'a', '1'],
+            ['r', '%nの２乗は' , 'a', '1'],
         ]
     };
 
