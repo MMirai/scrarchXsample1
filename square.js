@@ -9,10 +9,11 @@
 
     // blockが呼び出された時に呼ばれる関数を登録する。
     // 下にあるdescriptorでブロックと関数のひも付けを行っている。
-    ext.do_domething = function(str,callback) {
+    ext.do_something = function(str,callback) {
     var n = Number(str);
-    //callback(Math.pow(num1,2));
-    return Math.pow(n,2);
+    var z = Math.pow(n,2);
+    console.log('２乗は'+z+'です');
+    //return Math.pow(n,2);
     };
 
     // ブロックと関数のひも付け
