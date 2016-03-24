@@ -13,6 +13,10 @@
     var n = Number(str);
     var z = Math.pow(n,2);
     console.log(z);
+    window.setTimeout(function() {
+            callback();
+        }, wait*1000);
+
     //return Math.pow(n,2);
     };
 
